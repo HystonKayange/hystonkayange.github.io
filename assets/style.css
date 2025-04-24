@@ -219,6 +219,9 @@ img {
 .home__blob-img {
   width: 360px;
 }
+
+
+
 .profile__pic-top {
   width: 120px;
   height: 120px;
@@ -622,14 +625,13 @@ img {
 
 .project__card {
   display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 2rem;
+  border-radius: 1rem;
   background: #fff;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
-  border-radius: 1rem;
-  overflow: hidden;
-  flex-direction: row;
-  align-items: center;
-  gap: 2rem;
-  padding: 1.5rem;
   transition: transform 0.3s ease;
 }
 
@@ -642,10 +644,16 @@ img {
   height: auto;
   border-radius: 0.75rem;
   object-fit: cover;
+  flex-shrink: 0;
 }
 
 .project__content {
   flex: 1;
+  max-width: 600px;
+  text-align: left;
+  line-height: 1.8;
+  word-wrap: break-word;
+  hyphens: auto;
 }
 
 .project__title {
@@ -662,9 +670,110 @@ img {
 
 .project__buttons {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   gap: 1rem;
   margin-top: 1rem;
 }
+
+/* ===== PROJECTS SECTION ===== */
+.projects.section {
+  padding-top: 4rem;
+}
+
+.project__container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.project__card {
+  display: flex;
+  flex-direction: row-reverse; /* Image on right */
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  background: #fff;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+  transition: transform 0.3s ease;
+}
+
+.project__card:hover {
+  transform: translateY(-5px);
+}
+
+.project__img {
+  width: 280px;
+  height: auto;
+  border-radius: 0.75rem;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.project__content {
+  flex: 1;
+  max-width: 600px;
+  text-align: left;
+  line-height: 1.8;
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
+.project__title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.project__desc {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.project__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+/* ===== PROJECTS - Responsive Mobile Layout ===== */
+@media screen and (max-width: 768px) {
+  .project__card {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    padding: 1.5rem 1rem;
+  }
+
+  .project__img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 1rem;
+  }
+
+  .project__content {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .project__buttons {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+
+  .project__buttons a {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* ===== BUTTONS ===== */
 
 .button {
   display: inline-flex;
