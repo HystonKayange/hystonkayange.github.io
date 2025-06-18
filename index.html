@@ -178,52 +178,76 @@
             <h2 class="section-title">Projects</h2>
           
             <div class="project__container bd-grid">
-          
-              <!-- Project 1 -->
-              <div class="project__card">
-                <img src="assets/img/Xr.png" alt="Heart Rate" class="project__img">
-          
-                <div class="project__content">
-                  <h3 class="project__title">XR Twin-based Rehabilitation Training Content Technology Development project</h3>
-                  <p class="project__desc">
-                    Contributed to this project (IITP/MSIT-funded, Project No. 2022-0-00218), focusing on AI-driven rehabilitation technologies.
-                    Performed data preprocessing, analysis and visualization. Developed a hybrid model for heart rate prediction 
-                    combining Dynamic Bayesian Networks (DBNs) and LSTMs. Achieved an avarage of  5.1 BPM MAE in prediction accuracy.This model 
-                    is to assist in XR Twin project in AI custom coaching by providing personalized recommendations based on heart rate data.
-                  </p>
-                  <p><strong>Tools:</strong> Python, PyTorch, Jupyter, NumPy & Pandas, Matplotlib & Seaborn, scikit-learn. </p>
-          
-                  <div class="project__buttons">
-                    <a href="https://github.com/HystonKayange/Heart-Rate-Modeling-for-Personalized-Fitness-Recommendations" target="_blank" class="button"><i class='bx bxl-github'></i> GitHub</a>
-                    <a href="https://ss.ssu.ac.kr/xrtwin" target="_blank" class="button button-outline"><i class='bx bx-link-external'></i> Digital Twin</a>
-                  </div>
-                </div>
-              </div>
-          
-              <!-- Project 2 -->
-              <div class="project__card">
-                <img src="assets/img/mthandizi.png" alt="Monitoring" class="project__img">
-          
-                <div class="project__content">
-                  <h3 class="project__title">Mthandizi: Communication Tool for the Deaf </h3>
-                  <p class="project__desc">
-                    Mthandizi is a software solution designed to translate hand gestures into text or speech, 
-                    and conversely, convert text or speech into hand gestures. This project aims to bridge communication barriers for deaf students in Malawi, 
-                    enhancing accessibility in educational settings. Additionally, it aspires to expand into broadcasting stations, 
-                    providing real-time sign language translation of news for the deaf community.
-                  </p>
-                  <p><strong>Tools:</strong> Python, CNN, OpenCV, Jupyter, PySide, PyQt5</p>
-          
-                  <div class="project__buttons">
-                    <a href="https://github.com/HystonKayange/Mthandizi" target="_blank" class="button"><i class='bx bxl-github'></i> GitHub</a>
-                    <a href="assets/Report.pdf" target="_blank" class="button button-outline" >
-                      <i class='bx bx-link-external'></i>Documentation </a>
-                  </div>
-                </div>
-              </div>
-          
-            </div>
-          </section>
+          <!--===== PROJECTS =====-->
+<section class="projects section" id="projects">
+  <h2 class="section-title">Projects</h2>
+
+  <div class="project__container bd-grid">
+
+    <!-- AI Personal Portfolio Chatbot -->
+    <div class="project__card">
+      <div class="project__content">
+        <h3 class="project__title">AI Personal Portfolio Chatbot</h3>
+        <p class="project__desc">
+          An interactive RAG-based chatbot that answers questions about my skills, experience, and projects using Next.js, TypeScript, Qdrant vector search, and Firebase Auth. Embeds personal CV and portfolio content for contextual responses.
+        </p>
+        <p><strong>Tools:</strong> Next.js, TypeScript, Tailwind CSS, Qdrant, Firebase, OpenAI Embeddings, LangChain.</p>
+        <div class="project__buttons">
+          <a href="https://https://chathk1.vercel.app/" target="_blank" class="button"><i class='bx bx-link-external'></i> Live Demo</a>
+          <a href="https://https://github.com/HystonKayange/ChatHK_demo" target="_blank" class="button"><i class='bx bxl-github'></i> GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- XR Twin-based Rehabilitation Training Content Technology Development -->
+    <div class="project__card">
+      <img src="assets/img/Xr.png" alt="Heart Rate Modeling" class="project__img">
+      <div class="project__content">
+        <h3 class="project__title">XR Twin-based Rehabilitation Training Content Technology Development</h3>
+        <p class="project__desc">
+          Contributed to this IITP/MSIT-funded project (No. 2022-0-00218), focusing on AI-driven rehabilitation technologies. Performed data preprocessing, analysis and visualization. Developed a hybrid Dynamic Bayesian Network + LSTM model achieving 5.1 BPM MAE for real-time heart rate prediction to power personalized XR coaching.
+        </p>
+        <p><strong>Tools:</strong> Python, PyTorch, NumPy, Pandas, Matplotlib & Seaborn, Scikit-Learn.</p>
+        <div class="project__buttons">
+          <a href="https://github.com/HystonKayange/Heart-Rate-Modeling-for-Personalized-Fitness-Recommendations" target="_blank" class="button"><i class='bx bxl-github'></i> GitHub</a>
+          <a href="https://ss.ssu.ac.kr/xrtwin" target="_blank" class="button button-outline"><i class='bx bx-link-external'></i> Digital Twin</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Feature Selection Tool -->
+    <div class="project__card">
+      <div class="project__content">
+        <h3 class="project__title">Feature Selection Tool</h3>
+        <p class="project__desc">
+          Developed a Python-based tool for automated feature preprocessing, importance analysis, and visualization in classification and regression workflows.
+        </p>
+        <p><strong>Tools:</strong> Python, Scikit-Learn, Feature-Engine, Matplotlib.</p>
+        <div class="project__buttons">
+          <a href="https://github.com/HystonKayange/Feature-Selection-Tool" target="_blank" class="button"><i class='bx bxl-github'></i> GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mthandizi: Communication Tool for the Deaf -->
+    <div class="project__card">
+      <img src="assets/img/mthandizi.png" alt="Mthandizi: Communication Tool for the Deaf" class="project__img">
+      <div class="project__content">
+        <h3 class="project__title">Mthandizi: Communication Tool for the Deaf</h3>
+        <p class="project__desc">
+          Mthandizi translates hand gestures into text or speech and vice versa, enhancing accessibility for deaf students in Malawi. Features a real-time CNN-based recognition pipeline with 87% accuracy and a PyQt5 interactive UI for educational and broadcasting use cases.
+        </p>
+        <p><strong>Tools:</strong> Python, TensorFlow, CNN, OpenCV, PyQt5.</p>
+        <div class="project__buttons">
+          <a href="https://github.com/HystonKayange/Mthandizi" target="_blank" class="button"><i class='bx bxl-github'></i> GitHub</a>
+          <a href="assets/Report.pdf" target="_blank" class="button button-outline"><i class='bx bx-link-external'></i> Documentation</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
           
           <section class="work section" id="work">
             <div class="work__container bd-grid">
