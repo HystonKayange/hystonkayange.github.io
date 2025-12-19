@@ -45,7 +45,7 @@
                     <h1 class="home__title">
                       Hi,<br>I'am <span class="home__title-color">Hyston</span><br>AI <br>Research<br> Engineer
                     </h1>
-                    <a href="assets/HYSTON_KAYANGE_CV.pdf" class="button" download>
+                    <a href="assets/Hyston_Kayange_Resume_2025.pdf" class="button" download>
                       Download CV <i class='bx bx-download'></i>
                     </a>
 
@@ -62,13 +62,11 @@
                     <div class="summary__text">
                       <h3>Professional Summary</h3>
                       <p>
-                        AI Research Engineer with over 3 years of experience in discriminative and generative AI, including recommen
-                          dation systems, computer vision, large language models (LLMs), and Retrieval-Augmented Generation (RAG).
-                          Also skilled in full-stack development, with over 4 months of hands-on experience using React, Next.js, and the
-                          MERN stack (MongoDB, Express.js, React, Node.js). Passionate about leveraging AI in an industrial setting
-                          to tackle real-world challenges and promote business growth.
-
-
+                        AI Research Engineer with three years of academic research experience and over five months 
+                        of industry experience building discriminative models, generative models, and LLM-based systems, 
+                        including recommendation systems and Retrieval-Augmented Generation (RAG). Experienced in 
+                        full-stack development using React, Next.js, and the MERN stack. Focused on deploying AI 
+                        solutions in industrial environments to solve real-world problems and drive business growth.
                       </p>
                     </div>
                   </div>
@@ -174,25 +172,72 @@
                 </div>
             </section>
 
-           <!--===== WORK =====-->
+           <!--===== PROJECTS =====-->
              
            <section class="projects section" id="projects">
             <h2 class="section-title">Projects</h2>
           
             <div class="project__container bd-grid">
 
-              
-                <!-- Project 1 -->
+              <!-- Project 1: MI-NOW -->
               <div class="project__card">
-                <img src="assets/img/chathk.png" alt="Heart Rate" class="project__img">
+                <img src="assets/img/minow.png" alt="MI-NOW Platform" class="project__img">
           
                 <div class="project__content">
-                  <h3 class="project__title">AI Personal Portfolio Chatbot</h3>
+                  <h3 class="project__title">MI-NOW — Enterprise Business Intelligence Platform</h3>
                   <p class="project__desc">
-                    Developed a personal portfolio chatbot using LangChain, OpenAI, and Qdrant. 
-                    The chatbot provides personalized responses to user queries about my portfolio, 
-                    leveraging RAG techniques to retrieve relevant information from my documents and GitHub repositories.
-                    This project showcases my skills in AI-driven conversational agents and enhances user engagement with my portfolio.
+                    Deployed an enterprise Business Intelligence platform delivering ETL and RAG APIs for 
+                    Korean manufacturing and global industrial data. Implemented a Hybrid RAG architecture 
+                    combining semantic search, keyword matching, and file-based retrieval. Achieved 97.7% 
+                    precision, 70.0% recall, 82.3% F1 score, with an average of 12.4% hallucination rate. 
+                    Architected a dual-provider AI inference system with on-premise Ollama and CLOVA Studio fallback.
+                  </p>
+                  <p><strong>Tools:</strong> Node.js, TypeScript, Express.js, Qdrant, Ollama, CLOVA Studio, 
+                     AWS (MySQL RDS, S3, OpenSearch), Redis, BullMQ, Next.js, React, Tesseract.js</p>
+          
+                  <div class="project__buttons">
+                    <a href="https://github.com/HystonKayange/MI-NOW-AI-Platform" target="_blank" class="button">
+                      <i class='bx bxl-github'></i> GitHub
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Project 2: SRT VoC -->
+              <div class="project__card">
+                <img src="assets/img/srt-voc.png" alt="SRT VoC Platform" class="project__img">
+          
+                <div class="project__content">
+                  <h3 class="project__title">SRT Voice of Customer (VoC) — AI Customer Service Platform</h3>
+                  <p class="project__desc">
+                    Contributed to developing an AI-powered VoC platform for Korea's SRT (Super Rapid Train), 
+                    automatically classifying and responding to customer complaints across multiple departments 
+                    using Tree-RAG (T-RAG). Built the T-RAG pipeline with entity detection, Milvus vector search, 
+                    LLM reranking, and response generation, achieving 95% precision in retrieval and response selection. 
+                    Implemented a multi-node LLM proxy with GPU/CPU load balancing.
+                  </p>
+                  <p><strong>Tools:</strong> Python, FastAPI, Milvus, LangChain, Tree-RAG, GPU/CPU Load Balancing</p>
+          
+                  <div class="project__buttons">
+                    <a href="https://github.com/HystonKayange" target="_blank" class="button">
+                      <i class='bx bxl-github'></i> GitHub
+                    </a>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Project 3: AI Chatbot -->
+              <div class="project__card">
+                <img src="assets/img/chathk.png" alt="AI Chatbot" class="project__img">
+          
+                <div class="project__content">
+                  <h3 class="project__title">AI Resume Assistant (Personal Portfolio Chatbot)</h3>
+                  <p class="project__desc">
+                    Built and deployed an AI Resume Assistant using Retrieval-Augmented Generation (RAG), 
+                    enabling recruiters to interactively query my CV, expertise, and experience. 
+                    The chatbot provides personalized responses leveraging RAG techniques to retrieve 
+                    relevant information from my documents and GitHub repositories.
+                    This project showcases skills in AI-driven conversational agents and enhances user engagement.
                   </p>
                   <p><strong>Tools:</strong> Next.js, TypeScript, LangChain, OpenAI, Qdrant, Firebase, Vercel. </p>
           
@@ -203,65 +248,43 @@
                 </div>
               </div>
           
-              <!-- Project 2 -->
+              <!-- Project 4: XR Twin -->
               <div class="project__card">
-                <img src="assets/img/Xr.png" alt="Heart Rate" class="project__img">
+                <img src="assets/img/Xr.png" alt="XR Twin" class="project__img">
           
                 <div class="project__content">
-                  <h3 class="project__title">XR Twin-based Rehabilitation Training Content Technology Development project</h3>
+                  <h3 class="project__title">XR Twin-based Rehabilitation Training Content Technology</h3>
                   <p class="project__desc">
                     Contributed to this project (IITP/MSIT-funded, Project No. 2022-0-00218), focusing on AI-driven rehabilitation technologies.
                     Performed data preprocessing, analysis and visualization. Developed a hybrid model for heart rate prediction 
-                    combining Dynamic Bayesian Networks (DBNs) and LSTMs. Achieved an avarage of  5.1 BPM MAE in prediction accuracy.This model 
-                    is to assist in XR Twin project in AI custom coaching by providing personalized recommendations based on heart rate data.
+                    combining Dynamic Bayesian Networks (DBNs) and LSTMs. Achieved an average of 5.1 BPM MAE in prediction accuracy. 
+                    This model assists in XR Twin project in AI custom coaching by providing personalized recommendations based on heart rate data.
                   </p>
                   <p><strong>Tools:</strong> Python, PyTorch, Jupyter, NumPy & Pandas, Matplotlib & Seaborn, scikit-learn. </p>
           
                   <div class="project__buttons">
-                    <a href="https://github.com/HystonKayange/Heart-Rate-Modeling-for-Personalized-Fitness-Recommendations" target="_blank" class="button"><i class='bx bxl-github'></i> GitHub</a>
+                    <a href="https://github.com/HystonKayange/Personalized-Heart-Rate-Model-for-XR-Custom-Coaching" target="_blank" class="button"><i class='bx bxl-github'></i> GitHub</a>
                     <a href="https://ss.ssu.ac.kr/xrtwin" target="_blank" class="button button-outline"><i class='bx bx-link-external'></i> Digital Twin</a>
                   </div>
                 </div>
               </div>
 
-               <!-- Project 4 -->
+              <!-- Project 5: Feature Selection Tool -->
               <div class="project__card">
-                <img src="assets/img/Figure_2.png" alt="Heart Rate" class="project__img">
+                <img src="assets/img/Figure_2.png" alt="Feature Selection" class="project__img">
           
                 <div class="project__content">
-                  <h3 class="project__title">Feature Selection Tool </h3>
+                  <h3 class="project__title">Feature Selection Tool</h3>
                   <p class="project__desc">
-                    Developed a Python-based Feature Selector Tool for automated data preprocessing, feature impor
-                    tance analysis, and visualization, supporting classification and regression tasks.
+                    Developed a Python-based Feature Selector Tool for automated data preprocessing, feature importance 
+                    analysis, and visualization, supporting classification and regression tasks.
                     This tool streamlines the feature selection process, enhancing model performance and interpretability.
                     It includes functionalities for data loading, preprocessing, feature importance ranking, and visualization.
+                  </p>
                   <p><strong>Tools:</strong> Python, Scikit-Learn, Feature-Engine, Seaborn, Matplotlib. </p>
           
                   <div class="project__buttons">
-                    <a href="https://github.com/HystonKayange/Feature-Selection-Tool/tree/main" target="_blank" class="button"><i class='bx bxl-github'></i> GitHub</a>
-                    <a href="https://github.com/HystonKayange/Feature-Selection-Tool/tree/main" target="_blank" class="button button-outline"><i class='bx bx-link-external'></i> Feature-Selection-Tool</a>
-                  </div>
-                </div>
-              </div>
-          
-              <!-- Project 4 -->
-              <div class="project__card">
-                <img src="assets/img/mthandizi.png" alt="Monitoring" class="project__img">
-          
-                <div class="project__content">
-                  <h3 class="project__title">Mthandizi: Communication Tool for the Deaf </h3>
-                  <p class="project__desc">
-                    Mthandizi is a software solution designed to translate hand gestures into text or speech, 
-                    and conversely, convert text or speech into hand gestures. This project aims to bridge communication barriers for deaf students in Malawi, 
-                    enhancing accessibility in educational settings. Additionally, it aspires to expand into broadcasting stations, 
-                    providing real-time sign language translation of news for the deaf community.
-                  </p>
-                  <p><strong>Tools:</strong> Python, CNN, OpenCV, Jupyter, PySide, PyQt5</p>
-          
-                  <div class="project__buttons">
-                    <a href="https://github.com/HystonKayange/Mthandizi" target="_blank" class="button"><i class='bx bxl-github'></i> GitHub</a>
-                    <a href="assets/Report.pdf" target="_blank" class="button button-outline" >
-                      <i class='bx bx-link-external'></i>Documentation </a>
+                    <a href="https://github.com/HystonKayange/Feature-Selection-Tool" target="_blank" class="button"><i class='bx bxl-github'></i> GitHub</a>
                   </div>
                 </div>
               </div>
@@ -290,13 +313,10 @@
                 <img src="assets/img/Heart_rate_1.png" alt="Heart Rate">
               </div>
               <div class="work__img">
-                <img src="assets/img/mthandizi.png" alt="Mthandizi 1">
+                <img src="assets/img/chathk.png" alt="ChatHK">
               </div>
               <div class="work__img">
-                <img src="assets/img/mthandizi1.png" alt="Mthandizi 2">
-              </div>
-              <div class="work__img">
-                <img src="assets/img/mthandizi2.png" alt="Mthandizi 3">
+                <img src="assets/img/Figure_2.png" alt="Feature Selection">
               </div>
             </div>
           
@@ -306,146 +326,141 @@
               <img class="img-modal-content" id="imgModalContent" alt="Zoomed Image">
             </div>
           </section>
-                      <!--===== EDUCATION =====-->
-              <section class="education section" id="education">
-                <h2 class="section-title">Education</h2>
 
-                <div class="education__container bd-grid">
-                  <!-- Master's Degree -->
-                  <div class="education__card">
-                    <i class='bx bxs-graduation education__icon'></i>
-                    <h3 class="education__title">MSc in Computer Science and Engineering</h3>
-                    <p class="education__institution">
-                      Soongsil University, Seoul, South Korea <span class="edu-duration">(2022 – 2025)</span>
-                    </p>
-                    <div class="edu-gpa"><strong>GPA:</strong> 4.14 / 4.50</div>
-                    <p class="education__description">
-                      Specialized in Machine Learning and Deep Learning and Research.
-                      <br><strong>Thesis:</strong> “A Multi-Model Machine Learning Framework for Personalized Fitness Recommendations
-                      Using DBNs and LSTMs" 
-                    </p>
-                  </div>
+          <!--===== EDUCATION =====-->
+          <section class="education section" id="education">
+            <h2 class="section-title">Education</h2>
 
-
-                  <!-- Bachelor's Degree -->
-                  <div class="education__card">
-                    <i class='bx bxs-school education__icon'></i>
-                    <h3 class="education__title">BSc in Information Communication Technology</h3>
-                    <p class="education__institution">
-                      Daeyang University, Lilongwe, Malawi <span class="edu-duration"> (2017 – 2021)</span>
-                    </p>
-                    <div class="edu-gpa"><strong>GPA:</strong> 3.30 / 4.0</div>
-                    <p class="education__description">
-                      Focused on systems design and development.
-                      <br><strong>Final Year Project:</strong> Designed and implemented an AI-powered tool to translate speech and text into sign language, enhancing communication for deaf students.
-                    </p>
-                  </div>
-                </div>
-              </section>
-
-              <section class="publications section" id="publications">
-                <h2 class="section-title">Publications</h2>
-              
-                <div class="publications__container bd-grid">
-                  <!-- Journal -->
-                  <div class="publication__card">
-                    <h3 class="publication__title">A Hybrid Approach to Modeling Heart Rate Response for Personalized Fitness Recommendations</h3>
-                    <p class="publication__venue">📘 <strong>Journal:</strong> <a href="https://doi.org/10.3390/electronics13193888" target="_blank">Electronics, Vol. 13, Issue 19 (2024)</a></p>
-                    <button class="button button-outline" onclick="showAbstract('abstract1')">View Abstract</button>
-                    <div id="abstract1" class="abstract-modal">
-                      <div class="abstract-content">
-                        <span class="close" onclick="closeAbstract('abstract1')">&times;</span>
-                        <p><strong>Abstract:</strong> This paper proposes a hybrid model combining DBNs and LSTMs to personalize heart rate prediction for adaptive fitness guidance.</p>
-                      </div>
-                    </div>
-                  </div>
-              
-                  <!-- Conference 1 -->
-                  <div class="publication__card">
-                    <h3 class="publication__title">ProAdaFs: Probabilistic and Adaptive Feature Selection in Deep Recommendation Systems</h3>
-                    <p class="publication__venue">📍 <strong>Conference:</strong> <a href="https://ieeexplore.ieee.org/abstract/document/10572163" target="_blank">ICOIN 2024, Vietnam</a></p>
-                    <button class="button button-outline" onclick="showAbstract('abstract2')">View Abstract</button>
-                    <div id="abstract2" class="abstract-modal">
-                      <div class="abstract-content">
-                        <span class="close" onclick="closeAbstract('abstract2')">&times;</span>
-                        <p><strong>Abstract:</strong> ProAdaFs introduces a probabilistic adaptive feature selection layer within deep recommendation models to improve both performance and interpretability.</p>
-                      </div>
-                    </div>
-                  </div>
-              
-                  <!-- Conference 2 -->
-                  <div class="publication__card">
-                    <h3 class="publication__title">Deep Adaptive Feature Selection in Deep Recommender Systems</h3>
-                    <p class="publication__venue">📍 <strong>Conference:</strong> <a href="https://www.dbpia.co.kr/Journal/articleDetail?nodeId=NODE11488460" target="_blank">Korean Society of Information Science, Jeju (2023)</a></p>
-                    <button class="button button-outline" onclick="showAbstract('abstract3')">View Abstract</button>
-                    <div id="abstract3" class="abstract-modal">
-                      <div class="abstract-content">
-                        <span class="close" onclick="closeAbstract('abstract3')">&times;</span>
-                        <p><strong>Abstract:</strong> This work explores a deep learning architecture embedded with adaptive feature selection for scalable and efficient recommendation systems.</p>
-                      </div>
-                    </div>
-                  </div>
-              
-                  <!-- Scholar Profile -->
-                  <div class="publication__card scholar-card">
-                    <h3 class="publication__title">Google Scholar</h3>
-                    <p class="publication__venue">📚 All citations and full list of work</p>
-                    <a href="https://scholar.google.com/citations?user=5yZU8GcAAAAJ&hl=en" target="_blank"  class="button">View Profile</a>
-                  </div>
-                </div>
-              </section>
-              
-                          <!--===== CONTACT =====-->
-
-                                      <!-- Contact Section -->
-            <section class="contact section" id="contact">
-              <h2 class="section-title">Contact</h2>
-
-              <div class="contact__container bd-grid">
-                <form action="https://formspree.io/f/meogqjgn" method="POST" class="contact__form">
-                  <input type="text" name="name" placeholder="Name" class="contact__input" required>
-                  <input type="email" name="email" placeholder="Email" class="contact__input" required>
-                  <textarea name="message" placeholder="Your message" class="contact__input" rows="6" required></textarea>
-                  <input type="hidden" name="_subject" value="New message from portfolio site">
-                  <input type="hidden" name="_captcha" value="false">
-                  <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html">
-                  <button type="submit" class="contact__button button">Send Message</button>
-                </form>
+            <div class="education__container bd-grid">
+              <!-- Master's Degree -->
+              <div class="education__card">
+                <i class='bx bxs-graduation education__icon'></i>
+                <h3 class="education__title">MSc in Computer Science and Engineering</h3>
+                <p class="education__institution">
+                  Soongsil University, Seoul, South Korea <span class="edu-duration">(2022 – 2025)</span>
+                </p>
+                <div class="edu-gpa"><strong>GPA:</strong> 4.14 / 4.50</div>
+                <p class="education__description">
+                  Specialized in Machine Learning and Deep Learning and Research.
+                  <br><strong>Thesis:</strong> "A Multi-Model Machine Learning Framework for Personalized Fitness Recommendations
+                  Using DBNs and LSTMs" 
+                </p>
               </div>
-            </section>
 
-            <div id="formSuccessModal" class="modal success-modal">
-              <div class="modal__content">
-                <span class="modal__close" onclick="closeSuccessModal()">&times;</span>
-                <h3>Message Sent ✅</h3>
-                <p>Thanks for reaching out! I’ll get back to you shortly.</p>
+              <!-- Bachelor's Degree -->
+              <div class="education__card">
+                <i class='bx bxs-school education__icon'></i>
+                <h3 class="education__title">BSc in Information Communication Technology</h3>
+                <p class="education__institution">
+                  Daeyang University, Lilongwe, Malawi <span class="edu-duration"> (2017 – 2021)</span>
+                </p>
+                <div class="edu-gpa"><strong>GPA:</strong> 3.30 / 4.0</div>
+                <p class="education__description">
+                  Focused on systems design and development.
+                  <br><strong>Final Year Project:</strong> Designed and implemented an AI-powered tool to translate speech and text into sign language, enhancing communication for deaf students.
+                </p>
               </div>
             </div>
+          </section>
 
-                      <!-- Image Popup Modal -->
+          <section class="publications section" id="publications">
+            <h2 class="section-title">Publications</h2>
+          
+            <div class="publications__container bd-grid">
+              <!-- Journal -->
+              <div class="publication__card">
+                <h3 class="publication__title">A Hybrid Approach to Modeling Heart Rate Response for Personalized Fitness Recommendations</h3>
+                <p class="publication__venue">📘 <strong>Journal:</strong> <a href="https://doi.org/10.3390/electronics13193888" target="_blank">Electronics, Vol. 13, Issue 19 (2024)</a></p>
+                <button class="button button-outline" onclick="showAbstract('abstract1')">View Abstract</button>
+                <div id="abstract1" class="abstract-modal">
+                  <div class="abstract-content">
+                    <span class="close" onclick="closeAbstract('abstract1')">&times;</span>
+                    <p><strong>Abstract:</strong> This paper proposes a hybrid model combining DBNs and LSTMs to personalize heart rate prediction for adaptive fitness guidance.</p>
+                  </div>
+                </div>
+              </div>
+          
+              <!-- Conference 1 -->
+              <div class="publication__card">
+                <h3 class="publication__title">ProAdaFs: Probabilistic and Adaptive Feature Selection in Deep Recommendation Systems</h3>
+                <p class="publication__venue">📍 <strong>Conference:</strong> <a href="https://ieeexplore.ieee.org/abstract/document/10572163" target="_blank">ICOIN 2024, Vietnam</a></p>
+                <button class="button button-outline" onclick="showAbstract('abstract2')">View Abstract</button>
+                <div id="abstract2" class="abstract-modal">
+                  <div class="abstract-content">
+                    <span class="close" onclick="closeAbstract('abstract2')">&times;</span>
+                    <p><strong>Abstract:</strong> ProAdaFs introduces a probabilistic adaptive feature selection layer within deep recommendation models to improve both performance and interpretability.</p>
+                  </div>
+                </div>
+              </div>
+          
+              <!-- Conference 2 -->
+              <div class="publication__card">
+                <h3 class="publication__title">Deep Adaptive Feature Selection in Deep Recommender Systems</h3>
+                <p class="publication__venue">📍 <strong>Conference:</strong> <a href="https://www.dbpia.co.kr/Journal/articleDetail?nodeId=NODE11488460" target="_blank">Korean Society of Information Science, Jeju (2023)</a></p>
+                <button class="button button-outline" onclick="showAbstract('abstract3')">View Abstract</button>
+                <div id="abstract3" class="abstract-modal">
+                  <div class="abstract-content">
+                    <span class="close" onclick="closeAbstract('abstract3')">&times;</span>
+                    <p><strong>Abstract:</strong> This work explores a deep learning architecture embedded with adaptive feature selection for scalable and efficient recommendation systems.</p>
+                  </div>
+                </div>
+              </div>
+          
+              <!-- Scholar Profile -->
+              <div class="publication__card scholar-card">
+                <h3 class="publication__title">Google Scholar</h3>
+                <p class="publication__venue">📚 All citations and full list of work</p>
+                <a href="https://scholar.google.com/citations?user=5yZU8GcAAAAJ&hl=en" target="_blank"  class="button">View Profile</a>
+              </div>
+            </div>
+          </section>
+          
+          <!--===== CONTACT =====-->
+          <section class="contact section" id="contact">
+            <h2 class="section-title">Contact</h2>
+
+            <div class="contact__container bd-grid">
+              <form action="https://formspree.io/f/meogqjgn" method="POST" class="contact__form">
+                <input type="text" name="name" placeholder="Name" class="contact__input" required>
+                <input type="email" name="email" placeholder="Email" class="contact__input" required>
+                <textarea name="message" placeholder="Your message" class="contact__input" rows="6" required></textarea>
+                <input type="hidden" name="_subject" value="New message from portfolio site">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html">
+                <button type="submit" class="contact__button button">Send Message</button>
+              </form>
+            </div>
+          </section>
+
+          <div id="formSuccessModal" class="modal success-modal">
+            <div class="modal__content">
+              <span class="modal__close" onclick="closeSuccessModal()">&times;</span>
+              <h3>Message Sent ✅</h3>
+              <p>Thanks for reaching out! I'll get back to you shortly.</p>
+            </div>
+          </div>
+
+          <!-- Image Popup Modal -->
           <div id="imageModal" class="img-modal">
             <span class="img-modal-close" onclick="closeImageModal()">&times;</span>
             <img class="img-modal-content" id="modalImage">
           </div>
 
-            
+          <!-- Back to Top Button -->
+          <a href="home" class="back-to-top" id="backToTop"><i class='bx bx-up-arrow-alt'></i></a>
 
-            <!-- Back to Top Button -->
-            <a href="home" class="back-to-top" id="backToTop"><i class='bx bx-up-arrow-alt'></i></a>
-
-                    </main>
+        </main>
 
         <!--===== FOOTER =====-->
         <footer class="footer">
             <p class="footer__title">Hyston</p>
             <div class="footer__social">
-                <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
-                <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
-                <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+                <a href="https://www.linkedin.com/in/hyston-kayange-2682641b5" target="_blank" class="footer__icon"><i class='bx bxl-linkedin' ></i></a>
+                <a href="https://github.com/HystonKayange" target="_blank" class="footer__icon"><i class='bx bxl-github' ></i></a>
+                <a href="#contact" class="footer__icon"><i class='bx bx-envelope' ></i></a>
             </div>
             <p class="footer__copy">&#169; Kayange_Hyston. All rights reserved</p>
         </footer>
-
 
         <!--===== SCROLL REVEAL =====-->
         <script src="https://unpkg.com/scrollreveal"></script>
